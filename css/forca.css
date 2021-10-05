@@ -41,6 +41,8 @@ section{
  justify-self: center;
  position: relative;
  align-self: center;
+ display: flex;
+ flex-wrap: wrap;
 }
 #tecla{
     padding: 1rem;
@@ -74,4 +76,15 @@ section{
     font-size: 2rem;
     font-family:'yoshi';
     margin-left: 1.5rem;
+}
+#space{
+    padding: 1rem;
+    
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "sketchy";
+}
+.letra{
+    margin: 2px;
 }

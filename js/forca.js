@@ -13,14 +13,17 @@ for(let i =0; i<word.length;i++){
     line.setAttribute("data-value",i)
     line.innerHTML="_"
     if(word[i]==" "){
-        line.innerHTML =" "
+        line.innerHTML ="-"
+
     }
     document.querySelector("#lineWord").appendChild(line)
     console.log(word)
 }
 
 const alfabeto = "abcdefghijklmnopqrstuvwxyz"
+const simbols = "-/@# %*"
 const letters = alfabeto.split('')
+const simbolos = simbols.split('')
 
 letters.forEach(letter=>{
     const button = document.createElement("button")
@@ -31,6 +34,23 @@ button.setAttribute("value",letter)
 button.innerHTML = letter.toUpperCase()
 document.querySelector("#teclado").appendChild(button)
 })
+
+simbolos.forEach(s=>{
+    const button = document.createElement("button")
+    button.addEventListener("click",letterSelected)
+button.setAttribute("id","tecla")
+button.setAttribute("class","letra")
+button.setAttribute("value",s)
+button.innerHTML = s
+if(s == " "){
+    button.innerHTML = "space"
+    button.setAttribute("id","space")
+button.setAttribute("value",s) 
+button.setAttribute("class","letra")
+}
+document.querySelector("#teclado").appendChild(button)
+})
+
 function letterSelected(e){
     const letter =e.target.value
     let right = false
