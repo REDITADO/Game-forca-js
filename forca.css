@@ -1,0 +1,90 @@
+header{
+    height: 8rem;
+    width: 100vw;
+    background: cyan;
+
+}
+h1{
+    position: relative;
+    top: -1rem;
+    font-size: 10rem;
+    font-family: "cartoon";
+text-align: center;
+font-weight: 400;
+
+}
+@font-face {
+    font-family:'yoshi';
+    src: url('../fonts/yoshis-story-game-text-brk/yoshisst.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'cartoon';
+    src: url('../fonts/cartoon-madness-font/CartoonMadness-8YG0.ttf') format('opentype');
+}
+@font-face {
+   font-family: 'sketchy';
+    src: url('../fonts/sketchy-font/Sketchy-1jX4.ttf') format('opentype');
+}
+
+section{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#teclado{
+    height: 5rem;
+    width: 60vw;
+ justify-self: center;
+ position: relative;
+ align-self: center;
+ display: flex;
+ flex-wrap: wrap;
+}
+#tecla{
+    padding: 1rem;
+    width: 4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "sketchy";
+}
+#lineWord{
+    display: flex;
+    margin-bottom: 5rem;
+}
+#line{
+    width: 5rem;
+    height: 5rem;
+    font-size: 5rem;
+    font-family: "yoshi";
+    /* margin-bottom: 2rem; */
+}
+.check{
+    background-color: blue;
+    
+}
+.checkFail{
+    background: red;
+}
+#hankGeral{
+    align-self: flex-start;
+    justify-self: flex-end; 
+    font-size: 2rem;
+    font-family:'yoshi';
+    margin-left: 1.5rem;
+}
+#space{
+    padding: 1rem;
+    
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "sketchy";
+}
+.letra{
+    margin: 2px;
+}
